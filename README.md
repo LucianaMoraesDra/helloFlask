@@ -40,7 +40,35 @@
     pyenv local 2.8.6
     python --version
     
+
+    __by Mathieu GUIGNET__
     
-    
-    
-    __text by Mathieu GUIGNET__
+# Installation et utilisation de Poetry
+
+**PYTHON PACKAGING AND DEPENDENCY MANAGEMENT**
+
+1. Install Poetry
+$ https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py
+	restart le pc
+$ poetry --version
+
+2. Start a New Project
+$ poetry new cow-counts
+
+3. Create a file mycow
+$ touch cow_counts/mycow.py
+
+4. Create a Virtual Environment
+$ poetry install
+
+5. Add dependencies
+$ poetry add cowsay 
+$ poetry add pandas
+
+6. Run
+$ poetry run count Hello World
+
+7. Remove dependencies
+$ poetry remove pandas
+
+__by Luciana Moraes__
